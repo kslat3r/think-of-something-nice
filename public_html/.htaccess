@@ -1,0 +1,11 @@
+#AuthName "Restricted Area" 
+#AuthType Basic 
+#AuthUserFile /var/www/twesphere/.htpasswd
+#AuthGroupFile /dev/null 
+#require valid-user
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^(.+) - [PT,L]
+RewriteRule ^([^?]+)$ /index.php

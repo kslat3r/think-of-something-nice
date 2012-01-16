@@ -1,0 +1,483 @@
+@import url(http://fonts.googleapis.com/css?family=Cabin+Sketch:700&v2);
+@import url(http://fonts.googleapis.com/css?family=Forum&v2);
+@import url(http://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope&v2);
+
+body {
+	width: 100%;
+	/*background-image: -webkit-gradient(
+	    linear,
+	    left bottom,
+	    left top,	    
+	    color-stop(0.37, rgb(236,244,255)),
+	    color-stop(0.69, rgb(208,229,255)),
+	    color-stop(0.85, rgb(125,181,255))
+	);
+	background-image: -moz-linear-gradient(
+	    center bottom,	    
+	    rgb(236,244,255) 37%,
+	    rgb(208,229,255) 100%,
+	    rgb(125,181,255) 85%
+	);
+	background-attachment: fixed;*/
+	font-size: 1.2em;
+	font-family: "Forum",Georgia,Times,serif;
+	background-color: #fff;	
+	background: url(/assets/images/background.jpg) center fixed #f9f9f7 no-repeat;
+}
+
+.clear {
+	clear: both;
+	display: block;
+	height:0; 
+	overflow:hidden; 
+	margin:-1px 0 0 0;
+}
+
+a:link,
+a:visited {
+	color: black;	
+}
+
+a:hover,
+a:active {
+	color: blue;
+}
+
+#toolbar {
+	width: 100%;
+	background-color: #fff;
+	font-size: 80%;
+	padding: 10px;
+	padding-bottom: 10px;
+	padding-top: 0;
+	width: 100%;	
+	background-color: transparent;
+	text-align: right;
+	margin-bottom: 0px;
+}
+
+#toolbar ul {
+	float: right;
+}
+
+#toolbar li {
+	float: right;
+	margin: 0 10px;
+}
+
+.cont1 {
+	width: 100%;
+}
+
+.centre {
+	text-align: center;
+}
+
+h1 {
+	font-size: 150%;
+	color: #555;
+}
+
+h2 {
+	color: #333;
+}
+
+div#container {
+	margin-top: 20px;
+	position: relative;
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #fff;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	padding: 20px;
+	padding-top: 10px;	
+	padding-bottom: 30px;	
+	-moz-box-shadow: 10px 10px 10px #25160C;
+	-webkit-box-shadow: 10px 10px 10px #25160C;
+	box-shadow: 10px 10px 10px #2E1E13;
+	background: url(/assets/images/paper.jpg);		
+	display: block;
+}
+
+div#container.long {
+	min-height: 600px;
+}
+
+div#header {
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+}
+
+div#header div.main,
+div#header div.sub {
+	font-family: 'Cabin Sketch', Arial;
+	font-size: 300%;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #000;
+}
+
+div#header div.sub {
+	font-size: 150%;
+	text-transform: lowercase;
+}
+
+hr {
+	clear: both; 
+	float: none; 
+	width: 100%; 
+	height: 1px;
+	margin: 1.4em 0;
+	border: none; 
+	background: #ddd;
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		right bottom,
+		color-stop(0, rgb(255,255,255)),
+		color-stop(0.1, rgb(221,221,221)),
+		color-stop(0.9, rgb(221,221,221)),
+		color-stop(1, rgb(255,255,255))
+	);
+	background-image: -moz-linear-gradient(
+		left center,
+		rgb(255,255,255) 0%,
+		rgb(221,221,221) 10%,
+		rgb(221,221,221) 90%,
+		rgb(255,255,255) 100%
+	);
+}
+
+#content form {	
+	position: relative;
+	margin-top: 0px;	
+	padding-top: 0;
+	padding-left: 20px;
+	padding-right: 20px;	
+}
+
+div.thing,
+div#thing,
+#content form fieldset {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+#content form fieldset.small {
+	width: 60%;
+	margin-right: 4%;
+	float: left;
+	padding-right: 6%;
+	border-right: 1px solid rgb(221,221,221);
+}
+
+span.or,
+#content label,
+div.text h2 {
+	color: #000;
+    float: left;
+    font: 13px "Forum",Georgia,Times,serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    position: relative;
+    text-transform: uppercase;
+    top: 4px;
+}
+
+div.text {
+	margin-bottom: 10px;
+}
+
+div.text h2 {
+	width: 25%;
+	margin-right: 5%;
+	margin-top: 3px;
+}
+
+div.text p {
+	margin-left: 30%;
+	width: 70%;
+	color: blue;
+	font: 20px "Annie Use Your Telescope",Courier New,Courier New,Courier6,monospace;	
+}
+
+div.text img {
+	margin-top: 0px;
+	max-width: 100%;
+	min-width: 100%;
+	border: 2px solid #000;	
+}
+
+div.upload {
+	padding-top: 5px;
+	padding-bottom: 20px;
+}
+
+span.or {
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 10px;
+	margin-top: 2px;
+}
+
+#content input#remain_anon {
+	float: left;
+	margin-top: 3px;
+	margin-right: 10px;
+}
+
+#content input.text, 
+#content textarea,
+#content select {
+	background: none repeat scroll 0 0 transparent;
+    border-color: #989895;
+    border-style: none none dashed;
+    border-width: medium medium 1px;
+    bottom: 0px;
+    color: blue;
+    font: 20px "Annie Use Your Telescope",Courier New,Courier New,Courier6,monospace;
+    letter-spacing: 1px;
+    outline: medium none;
+    position: relative;
+    width: 99%;
+    margin-top: 2px;
+}
+
+#content form textarea#somethingnice {
+	width: 100%;
+	bottom: 0;
+	border: 1px dashed #989895;
+	margin-top: 15px;
+	height: 200px;
+}
+
+#content form input#upload {
+	margin-top: 15px;
+}
+
+#content input.text,
+#content select {
+	padding: 0.2em;
+}
+
+#content select {
+
+}
+#content input:focus,
+#content textarea:focus {
+	
+}
+
+#content fieldset > div {
+	margin-bottom: 30px;	
+}
+
+#content fieldset div.submit {	
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+
+#content form span.annotation {
+	font-size: 12px;
+}
+
+#content div.submit input {
+	cursor: pointer;
+	outline: 0;
+	border: 0;
+	background-color: transparent;
+	font-family: 'Cabin Sketch', Arial;
+	font-size: 200%;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #000;	
+}
+
+#content div.submit input:hover {
+	color: blue;
+}
+
+div.debug {
+	font-family: "Courier New", courier, fixed;
+	font-size: 95%;
+	text-align: left;
+	width: 99%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 1%;
+	background-color: #fff;
+	margin-bottom: 0;
+	margin-top: 20px;
+}
+
+div.debug pre {
+	line-height: .6;
+}
+
+label#areyouhuman {
+	margin-bottom: 10px;
+}
+
+label.recaptcha_input_area_text {
+	font-family: Arial !important;
+	letter-spacing: normal !important;
+	text-transform: none !important;
+}
+
+div#alerts {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-bottom: 20px;
+	font: 16px "Forum",Georgia,Times,serif;
+	border: 1px solid #ccc;	
+}
+
+div#alerts ul {
+	width: 96%;
+	padding: 2%;
+} 
+
+ul.success {
+	background-color: #F0FFBF;
+}
+
+ul.error {
+	background-color: #ffeae4;
+}
+
+div#footer {
+	text-align: center;
+	font-size: 60%;
+	margin-bottom: 20px;
+	margin-top: 60px;
+	color: #fff;
+}
+
+div#footer a {
+	color: #fff;
+}
+
+ul#admin_toolbar {
+	float: right;
+	font-size: 80%;
+}
+
+ul#admin_toolbar li {
+	float: left;
+	margin-right: 10px;
+}
+
+table {
+	width: 100%;
+	margin-top: 15px;
+}
+
+table th {
+	
+}
+
+table td {
+	text-align: center;
+}
+
+div.comments p {
+	padding-top: 10px;
+}
+
+ul#social {
+	width: 100%;	
+}
+
+ul#social li {
+	float: right;
+	display: block;
+}
+
+ul#social li.twitter {
+	margin-right: 10px;
+}
+
+form#moderate_form fieldset {
+	width: 200%;
+	margin-left: -50%;
+	background-color: #fff;
+}
+
+ul.tags {
+	margin-left: 30%;
+	width: 70%; 
+}
+
+ul.tags li {
+	float: left;
+	margin-right: 10px;
+}
+
+div.polaroid {
+	background-color: #fff;
+	border-top: 20px solid #fff;
+	border-left: 20px solid #fff;
+	border-right: 20px solid #fff;
+	border-bottom: 70px solid #fff;
+	margin-left: 30%;
+	text-align: center;
+	-moz-box-shadow: 5px 5px 5px #25160C;
+	-webkit-box-shadow: 5px 5px 5px #25160C;
+	box-shadow: 5px 5px 5px #2E1E13;	
+}
+
+div.polaroid_left {
+	-webkit-transform: rotate(-2deg);
+	-moz-transform: rotate(-2deg);	
+}
+
+div.polaroid_right {
+	-webkit-transform: rotate(2deg);
+	-moz-transform: rotate(2deg);	
+}
+
+div.sidebar {
+	text-align: left;
+	width: 29%;
+	float: left;
+	padding-left: 1%;
+	font-size: 12pt;
+}
+
+div.sidebar h2 {
+	font-family: 'Cabin Sketch', Arial;
+	font-size: 125%;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #000;
+	margin-bottom: 10px;
+}
+
+div.sidebar p {
+	margin-bottom: 20px;
+}
+
+div#tag_cloud {
+	word-wrap: break-word;
+	margin-bottom: 40px;
+}
+
+div#tag_cloud a:link,
+div#tag_cloud a:visited {
+	margin-right: 5px;	
+	color: #666;
+}
+
+div#tag_cloud a:hover,
+div#tag_cloud a:active {
+	color: blue;
+}
